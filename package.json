@@ -1,0 +1,23 @@
+{
+  "name": "flashcards_project",
+  "version": "1.0.0",
+  "description": "Day32 of Coding Bootcamp. Project to create a deck of flashcard.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajel89/flashcards_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajel89/flashcards_project/issues"
+  },
+  "homepage": "https://github.com/rajel89/flashcards_project#readme",
+  "dependencies": {
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
+  }
+}
