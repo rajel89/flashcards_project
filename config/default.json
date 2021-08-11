@@ -1,0 +1,6 @@
+
+{
+    "mongoURI": "mongodb+srv://new-user-01:YSx371pVxKIbHNnb@<clustername>.6si6q.mongodb.net/flashcard?retryWrites=true&w=majority"
+}
+// Page 4 of the node_express_mongodb_mongoose_tutorial
+//this potion of the code will house the clusted from the mongoDB, replace URI to establish connection.
