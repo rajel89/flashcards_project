@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Joi = require('joi');
 
 
-const deckSchema = new mongoose.Schema({
+const collectionSchema = new mongoose.Schema({
   question: { type: String, required: true, minlength: 2, maxlength: 150 },
   answer: { type: String, required: true },
   
@@ -12,9 +12,9 @@ const deckSchema = new mongoose.Schema({
   // price: { type: Number, required: true },
   // dateAdded: { type: Date, default: Date.now }, 
 });
-const Deck = mongoose.model('Deck', deckSchema);
+const Collection = mongoose.model('Collection', collectionSchema);
 
-function validateDeck (deck){
+function validateCollection (collection){
   const schema = Joi.object({
     question: Joi.string().min(2).max(150).required(),
     answer:Joi.string().required(),
@@ -24,11 +24,11 @@ function validateDeck (deck){
     // category:Joi.string().min(5).max(50).required(),
     // price: Joi.number().required(),
   });
-  return schema.validate(deck);
+  return schema.validate(collection);
 }
 
 
-exports.Deck = Deck;
-exports.validate=validateDeck;
-exports.deckSchema=deckSchema;
+exports.Collection = Collection;
+exports.validate=validateCollection;
+exports.collectionSchema=collectionSchema;
 
