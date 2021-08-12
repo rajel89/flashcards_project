@@ -37,7 +37,7 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const collection = await collection.findById(req.params.id);
+    const collection = await Collection.findById(req.params.id);
     if (!collection)
       return res.status(400).send(`The card with id "${req.params.id}" dos not exist in the deck.`);
 
